@@ -4,7 +4,7 @@
 
 In today's fast-paced world, businesses of all sizes are looking to harness the power of artificial intelligence to gain a competitive edge. However, managing the entire AI workflow, from datasets to deployment, can be a daunting challenge, especially when teams consist of individuals with varying levels of ML expertise. 
 
-In the [YouTube video](https://youtu.be/rwGDN_CNLNA), I highlight Google Vertex AI – a platform providing tools for every step of the ML workflow for different model types and varying levels of expertise all in one central place. It enables you to define your prediction task, ingest data, analyze data, transform data, train a model, evaluate the model, and deploy it.
+In the [YouTube video](https://youtu.be/rwGDN_CNLNA), I highlight [Google Vertex AI](https://cloud.google.com/vertex-ai) – a platform providing tools for every step of the ML workflow for different model types and varying levels of expertise all in one central place. It enables you to define your prediction task, ingest data, analyze data, transform data, train a model, evaluate the model, and deploy it.
 
 I would illustrate how to use Vertex AI for movie rating prediction. This was a well-documented example by Google Developers: https://codelabs.developers.google.com/moviescore-prediction-vertexai#0
 

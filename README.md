@@ -1,12 +1,14 @@
 # From Datasets to Deployment: How Vertex AI Simplifies ML for Movie Rating Prediction
 
-In today's fast-paced world, businesses of all sizes are looking to harness the power of artificial intelligence to gain a competitive edge. However, managing the entire AI workflow, from datasets to deployment, can be a daunting challenge, especially when teams consist of individuals with varying levels of ML expertise. This is where Google Vertex AI comes in - a powerful platform designed to address the many components of the AI workflow, making it easier for all team members to collaborate and work together effectively. 
+> YouTube tutorial: https://youtu.be/rwGDN_CNLNA
 
-Once you have defined your prediction task, the Vertex AI dashboard consists of all these sections to help you ingest data, analyze data, transform data, train a model, evaluate the model and deploy it.
+In today's fast-paced world, businesses of all sizes are looking to harness the power of artificial intelligence to gain a competitive edge. However, managing the entire AI workflow, from datasets to deployment, can be a daunting challenge, especially when teams consist of individuals with varying levels of ML expertise. 
 
-I made a video illustrating how to use Vertex AI for movie rating prediction - creating a movie score prediction model using Vertex AI AutoML and data stored in BigQuery and having the deployed model endpoint triggered from Java Cloud Functions. 
+In the [YouTube video](https://youtu.be/rwGDN_CNLNA), I highlight Google Vertex AI – a platform providing tools for every step of the ML workflow for different model types and varying levels of expertise all in one central place. It enables you to define your prediction task, ingest data, analyze data, transform data, train a model, evaluate the model, and deploy it.
 
-> YouTube video: 
+I would illustrate how to use Vertex AI for movie rating prediction. This was a well-documented example by Google Developers: https://codelabs.developers.google.com/moviescore-prediction-vertexai#0
+
+We'll create a movie score prediction model using Vertex AI AutoML and data stored in BigQuery. Then, we will have the deployed model endpoint triggered from Java Cloud Functions. 
 
 # Step 1: Requirements
 ## Google Cloud Project
@@ -27,6 +29,7 @@ $ gcloud config list project
 # Step 2: Preparing Training Data
 Preparing training data is crucial in ensuring the accuracy and effectiveness of machine learning models. Properly labeled and well-structured data can help models learn and generalize better, leading to more accurate predictions and insights. For this short poject, the assumption is that the data is already prepared. It is available on GitHub [(movies.csv)](https://github.com/AbiramiSukumaran/movie-score/blob/main/movies.csv). Some of the features of the data are the movie name, rating, and the genre.
 
+You can also find the dataset in this repo: https://github.com/odemuno/vertexai-movie_rating_prediction/blob/24cd34323530d6d8740a7af5e9e33e1717b913f6/movies.csv#L1
 
 # Step 3: Creating and Loading Dataset
 First thing you want to do is clone the repo from the GitHub page linked above. 
@@ -57,6 +60,11 @@ SELECT name, rating, genre, runtime FROM bq_movie_dataset.movies_score limit 3;
 ```
 
 # Step 4: Using the BigQuery data in Vertex AI AutoML
-
+- Follow instructions in the [YouTube video](https://youtu.be/rwGDN_CNLNA)
 
 # Step 5: Using Java Cloud Function to trigger ML invocation
+- Follow instructions in the [YouTube video](https://youtu.be/rwGDN_CNLNA)
+- The relevant files are:
+    - HelloHttpFunction.java: https://github.com/odemuno/vertexai-movie_rating_prediction/blob/main/HelloHttpFunction.java
+    - pom.xml: https://github.com/odemuno/vertexai-movie_rating_prediction/blob/main/pom.xml
+
